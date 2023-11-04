@@ -1,0 +1,143 @@
+body {
+    font-family: 'Moolie', cursive;
+    background-color: black;
+    color: white;
+}
+
+.texto{
+    color:white;
+}
+
+.barra{
+    background-color:black;
+}
+
+/* Retangulo negro quando o mouse está em cima */
+.nav-link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px; /* arredondar os vertices */
+}
+
+/* codigo fornecido pelo professor */
+.bar1,
+.bar2,
+.bar3 {
+width: 23px;
+height: 3px;
+margin: 5px;
+background: #2a9134;
+transition: all 0.5s ease;
+}
+.change .bar1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+opacity: 0;
+}
+.change .bar3 {
+transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/* Cor dos Icons de redes sociais */
+.fa-square-x-twitter {
+    color: #ffffff;
+}
+
+.fa-twitch {
+    color: #7f2df9; 
+}
+
+.fa-gamepad {
+    color: #ff1e1e;
+}
+
+/* Escurece a cor em 20% (0.8 de brilho) */
+.fa-square-x-twitter:hover,
+.fa-twitch:hover,
+.fa-gamepad:hover {
+    filter: brightness(0.8); 
+}
+
+/* Skills */
+#backToTopBtn {
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+}
+#backToTopBtn2 {
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+}
+#backToTopBtn3 {
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+}
+
+#backToTopBtn:hover {
+    filter: brightness(0.5);
+}
+#backToTopBtn2:hover {
+    filter: brightness(0.5);
+}
+#backToTopBtn3:hover {
+    filter: brightness(0.5);
+}
+
+.polygon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%; 
+    clip-path: polygon(0% 0%, 60% 0%, 100% 100%, 0% 100%);
+    background-color: white;
+}
+
+.texto_skill{
+    color: rgb(167, 167, 167);
+}
+
+.fa-python, 
+.fa-html5,
+.fa-java,
+.fa-unity{
+    font-size: 75px;
+    color: black;
+    border-radius: 10px;
+}
+
+.fa-python:hover,
+.fa-html5:hover,
+.fa-java:hover,
+.fa-unity:hover{
+    color: rgb(48, 48, 48);
+}
+
+#downloadBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17a2b8; /* Cor info */
+    border: none;
+    border-radius: 20px; /* Borda arredondada */
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#downloadBtn:hover {
+    background-color: white;
+    color: #17a2b8; /* Cor info invertida */
+    transform: translateY(-3px); /* Desloca para cima quando o mouse está sobre ele */
+}
+
+.project-card {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Zoom de 110% no hover */
+    filter: brightness(1.4); /* Aumenta o brilho no hover */
+}
